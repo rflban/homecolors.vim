@@ -1,4 +1,4 @@
-homecolors
+# Homecolors vim theme
 
 plugin code based on `joshdick/onedark.vim` and `cseelus/vim-colors-lucid`
 
