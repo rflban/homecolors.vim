@@ -42,7 +42,7 @@ let colorgroup['Cursor']          = { 'guibg': s:bg }
 let colorgroup['CursorLine']      = { 'guibg': s:bg1_1 }
 let colorgroup['LineNr']          = { 'guibg': s:bg, 'guifg': s:fg2 }
 let colorgroup['CursorLineNR']    = { 'guibg': s:bg1_1, 'guifg': s:fg1, 'gui': 'bold' }
-let colorgroup['EndOfBuffer']     = { 'guibg': s:bg, 'guifg': s:bg }
+let colorgroup['EndOfBuffer']     = { 'guibg': s:bg }
 
 "" Window/Tabs
 let colorgroup['VertSplit']       = { 'guibg': s:bg }
