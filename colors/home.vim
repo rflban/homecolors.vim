@@ -139,6 +139,37 @@ let colorgroup['SpellCap']        = { 'guibg': s:bg, 'guifg': s:yellow, 'gui': '
 let colorgroup['SpellLocal']      = { 'guibg': s:bg, 'guifg': s:magenta, 'gui': 'underline' }
 let colorgroup['SpellRare']       = { 'guibg': s:bg, 'guifg': s:green, 'gui': 'underline' }
 
+""" Neovim
+if has("nvim")
+"" Terminal
+  let g:terminal_color_background = s:bg
+  let g:terminal_color_foreground = s:fg
+
+  let g:terminal_color_0 =  s:black
+  let g:terminal_color_1 =  s:red
+  let g:terminal_color_2 =  s:green
+  let g:terminal_color_3 =  s:yellow
+  let g:terminal_color_4 =  s:blue
+  let g:terminal_color_5 =  s:magenta
+  let g:terminal_color_6 =  s:cyan
+  let g:terminal_color_7 =  s:white
+
+  let g:terminal_color_8 =  s:black
+  let g:terminal_color_9 =  s:red
+  let g:terminal_color_10 = s:green
+  let g:terminal_color_11 = s:yellow
+  let g:terminal_color_12 = s:blue
+  let g:terminal_color_13 = s:magenta
+  let g:terminal_color_14 = s:cyan
+  let g:terminal_color_15 = s:white
+endif
+
+"" Plugins
+" Identline
+let g:indentLine_color_gui = s:bg2
+" Vim-better-whitespace
+let colorgroup['ExtraWhitespace'] = { 'guibg': s:red }
+
 for key in keys(colorgroup)
     let s:colors = colorgroup[key]
 
@@ -162,34 +193,4 @@ for key in keys(colorgroup)
 
     execute "hi ".key." gui=".gui." guifg=".guifg." guibg=".guibg
 endfor
-
-""" Neovim
-"" Terminal
-if has("nvim")
-  let g:terminal_color_background = s:bg
-  let g:terminal_color_foreground = s:fg
-
-  let g:terminal_color_0 =  s:black
-  let g:terminal_color_1 =  s:red
-  let g:terminal_color_2 =  s:green
-  let g:terminal_color_3 =  s:yellow
-  let g:terminal_color_4 =  s:blue
-  let g:terminal_color_5 =  s:magenta
-  let g:terminal_color_6 =  s:cyan
-  let g:terminal_color_7 =  s:white
-
-  let g:terminal_color_8 =  s:black
-  let g:terminal_color_9 =  s:red
-  let g:terminal_color_10 = s:green
-  let g:terminal_color_11 = s:yellow
-  let g:terminal_color_12 = s:blue
-  let g:terminal_color_13 = s:magenta
-  let g:terminal_color_14 = s:cyan
-  let g:terminal_color_15 = s:white
-endif
-
-""" Plugins
-
-"" Identline
-let g:indentLine_color_gui = s:bg2
 
