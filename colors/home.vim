@@ -169,8 +169,13 @@ endif
 " Identline
 let g:indentLine_color_gui = s:bg2
 
-" Vim-better-whitespace
+" vim-better-whitespace
 let colorgroup['ExtraWhitespace'] = { 'guibg': s:red }
+
+" vim-lsp-cxx-highlight
+let colorgroup['LspCxxHlGroupEnumConstant'] = { 'guifg': s:cyan }
+let colorgroup['LspCxxHlGroupNamespace'] = { 'guifg': s:magenta }
+let colorgroup['LspCxxHlGroupMemberVariable'] = { 'guifg': s:blue }
 
 " CoC
 let colorgroup['CocErrorSign']    = { 'guibg': 'none', 'guifg': s:red }
