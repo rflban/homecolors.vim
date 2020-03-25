@@ -41,7 +41,7 @@ let colorgroup['Cursor']          = { 'guibg': s:bg }
 let colorgroup['CursorLine']      = { 'guibg': s:bg1_1 }
 let colorgroup['LineNr']          = { 'guibg': s:bg, 'guifg': s:fg2 }
 let colorgroup['CursorLineNR']    = { 'guibg': s:bg1_1, 'guifg': s:fg1, 'gui': 'bold' }
-let colorgroup['EndOfBuffer']     = { 'guibg': s:bg }
+let colorgroup['EndOfBuffer']     = { 'guibg': s:bg, 'guifg': s:bg }
 
 "" Window/Tabs
 let colorgroup['VertSplit']       = { 'guibg': s:bg }
@@ -167,8 +167,17 @@ endif
 "" Plugins
 " Identline
 let g:indentLine_color_gui = s:bg2
+
 " Vim-better-whitespace
 let colorgroup['ExtraWhitespace'] = { 'guibg': s:red }
+
+" CoC
+let colorgroup['CocErrorSign']    = { 'guibg': 'none', 'guifg': s:red }
+let colorgroup['CocWarningSign']  = { 'guibg': 'none', 'guifg': s:yellow }
+let colorgroup['CocInfoSign']     = { 'guibg': 'none', 'guifg': s:blue }
+let colorgroup['CocHintSign']     = { 'guibg': 'none', 'guifg': s:cyan }
+let colorgroup['CocSelectedText'] = { 'guibg': 'none', 'guifg': s:magenta }
+let colorgroup['CocCodeLens']     = { 'guibg': 'none', 'guifg': s:white }
 
 for key in keys(colorgroup)
     let s:colors = colorgroup[key]
