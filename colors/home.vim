@@ -20,6 +20,7 @@ let s:bg      = s:colors.bg.gui
 let s:bg1     = s:colors.bg1.gui
 let s:bg1_1   = s:colors.bg1_1.gui
 let s:bg2     = s:colors.bg2.gui
+let s:bg2_1   = s:colors.bg2_1.gui
 let s:bg3     = s:colors.bg3.gui
 let s:bg4     = s:colors.bg4.gui
 
@@ -73,7 +74,7 @@ let colorgroup['ModeMsg']         = { 'guibg': s:bg }
 let colorgroup['MoreMsg']         = { 'guibg': s:bg }
 
 "" Visual aid
-let colorgroup['Visual']          = { 'guibg': s:bg2 }
+let colorgroup['Visual']          = { 'guibg': s:bg2_1 }
 let colorgroup['VisualNOS']       = { 'guibg': s:bg }
 let colorgroup['NonText']         = { 'guibg': s:bg }
 

@@ -16,6 +16,7 @@ let s:daycolors = {
             \ 'bg1'     : { 'gui' : '#e9e9eb' },
             \ 'bg1_1'   : { 'gui' : '#ececee' },
             \ 'bg2'     : { 'gui' : '#e1e1e3' },
+            \ 'bg2_1'   : { 'gui' : '#e5e5e7' },
             \ 'bg3'     : { 'gui' : '#d9d9db' },
             \ 'bg4'     : { 'gui' : '#d1d1d3' },
             \ }
@@ -38,6 +39,7 @@ let s:nightcolors = {
             \ 'bg1'     : { 'gui' : '#e9e9eb' },
             \ 'bg1_1'   : { 'gui' : '#ececee' },
             \ 'bg2'     : { 'gui' : '#e1e1e3' },
+            \ 'bg2_1'   : { 'gui' : '#e5e5e7' },
             \ 'bg3'     : { 'gui' : '#d9d9db' },
             \ 'bg4'     : { 'gui' : '#d1d1d3' },
             \ }
