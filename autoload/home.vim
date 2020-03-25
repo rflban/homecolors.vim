@@ -9,9 +9,12 @@ let s:daycolors = {
             \ 'white'   : { 'gui' : '#ADADAE' },
             \
             \ 'fg'      : { 'gui' : '#404042' },
+            \ 'fg1'     : { 'gui' : '#808082' },
+            \ 'fg2'     : { 'gui' : '#A0A0A2' },
             \
             \ 'bg'      : { 'gui' : '#efeff1' },
             \ 'bg1'     : { 'gui' : '#e9e9eb' },
+            \ 'bg1_1'   : { 'gui' : '#ececee' },
             \ 'bg2'     : { 'gui' : '#e1e1e3' },
             \ 'bg3'     : { 'gui' : '#d9d9db' },
             \ 'bg4'     : { 'gui' : '#d1d1d3' },
@@ -28,9 +31,12 @@ let s:nightcolors = {
             \ 'white'   : { 'gui' : '#ADADAE' },
             \
             \ 'fg'      : { 'gui' : '#404042' },
+            \ 'fg1'     : { 'gui' : '#808082' },
+            \ 'fg2'     : { 'gui' : '#A0A0A2' },
             \
             \ 'bg'      : { 'gui' : '#efeff1' },
             \ 'bg1'     : { 'gui' : '#e9e9eb' },
+            \ 'bg1_1'   : { 'gui' : '#ececee' },
             \ 'bg2'     : { 'gui' : '#e1e1e3' },
             \ 'bg3'     : { 'gui' : '#d9d9db' },
             \ 'bg4'     : { 'gui' : '#d1d1d3' },

@@ -13,9 +13,12 @@ endif
 let colors_name = "home"
 
 let s:fg      = s:colors.fg.gui
+let s:fg1     = s:colors.fg1.gui
+let s:fg2     = s:colors.fg2.gui
 
 let s:bg      = s:colors.bg.gui
 let s:bg1     = s:colors.bg1.gui
+let s:bg1_1   = s:colors.bg1_1.gui
 let s:bg2     = s:colors.bg2.gui
 let s:bg3     = s:colors.bg3.gui
 let s:bg4     = s:colors.bg4.gui
@@ -35,9 +38,9 @@ let colorgroup = {}
 "" Editor
 let colorgroup['Normal']          = { 'guibg': s:bg, 'guifg': s:fg }
 let colorgroup['Cursor']          = { 'guibg': s:bg }
-let colorgroup['CursorLine']      = { 'guibg': s:bg1 }
-let colorgroup['LineNr']          = { 'guibg': s:bg }
-let colorgroup['CursorLineNR']    = { 'guibg': s:bg1, 'gui': 'bold' }
+let colorgroup['CursorLine']      = { 'guibg': s:bg1_1 }
+let colorgroup['LineNr']          = { 'guibg': s:bg, 'guifg': s:fg2 }
+let colorgroup['CursorLineNR']    = { 'guibg': s:bg1_1, 'guifg': s:fg1, 'gui': 'bold' }
 let colorgroup['EndOfBuffer']     = { 'guibg': s:bg }
 
 "" Window/Tabs
@@ -125,8 +128,8 @@ let colorgroup['Structure']       = { 'guibg': 'none', 'guifg': s:yellow }
 let colorgroup['Typedef']         = { 'guibg': 'none', 'guifg': s:yellow }
 
 "" Completion menu
-let colorgroup['Pmenu']           = { 'guibg': s:bg2 }
-let colorgroup['PmenuSel']        = { 'guibg': s:bg1 }
+let colorgroup['Pmenu']           = { 'guibg': s:bg1 }
+let colorgroup['PmenuSel']        = { 'guibg': s:bg2 }
 let colorgroup['PmenuSbar']       = { 'guibg': s:bg2 }
 let colorgroup['PmenuThumb']      = { 'guibg': s:bg4 }
 
@@ -165,6 +168,7 @@ endfor
 if has("nvim")
   let g:terminal_color_background = s:bg
   let g:terminal_color_foreground = s:fg
+
   let g:terminal_color_0 =  s:black
   let g:terminal_color_1 =  s:red
   let g:terminal_color_2 =  s:green
@@ -173,6 +177,7 @@ if has("nvim")
   let g:terminal_color_5 =  s:magenta
   let g:terminal_color_6 =  s:cyan
   let g:terminal_color_7 =  s:white
+
   let g:terminal_color_8 =  s:black
   let g:terminal_color_9 =  s:red
   let g:terminal_color_10 = s:green
