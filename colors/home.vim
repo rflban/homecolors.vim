@@ -93,7 +93,7 @@ let colorgroup['Conditional']     = { 'guibg': 'none', 'guifg': s:magenta }
 let colorgroup['Repeat']          = { 'guibg': 'none', 'guifg': s:magenta }
 let colorgroup['Label']           = { 'guibg': 'none', 'guifg': s:cyan }
 let colorgroup['Operator']        = { 'guibg': 'none', 'guifg': s:red }
-let colorgroup['Keyword']         = { 'guibg': 'none', 'guifg': s:yellow }
+let colorgroup['Keyword']         = { 'guibg': 'none', 'guifg': s:cyan }
 let colorgroup['Exception']       = { 'guibg': 'none', 'guifg': s:red }
 let colorgroup['Comment']         = { 'guibg': 'none', 'guifg': s:white, 'gui': 'italic' }
 
@@ -113,7 +113,7 @@ let colorgroup['Number']          = { 'guibg': 'none', 'guifg': s:cyan }
 let colorgroup['Boolean']         = { 'guibg': 'none', 'guifg': s:cyan }
 let colorgroup['Float']           = { 'guibg': 'none', 'guifg': s:cyan }
 
-let colorgroup['Identifier']      = { 'guibg': 'none', 'guifg': s:blue }
+let colorgroup['Identifier']      = { 'guibg': 'none', 'guifg': s:fg }
 let colorgroup['Function']        = { 'guibg': 'none', 'guifg': s:blue }
 
 "" C like
