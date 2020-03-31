@@ -125,7 +125,7 @@ let colorgroup['PreCondit']       = { 'guibg': 'none', 'guifg': s:magenta }
 
 let colorgroup['Type']            = { 'guibg': 'none', 'guifg': s:yellow }
 let colorgroup['StorageClass']    = { 'guibg': 'none', 'guifg': s:yellow }
-let colorgroup['Structure']       = { 'guibg': 'none', 'guifg': s:yellow }
+let colorgroup['Structure']       = { 'guibg': 'none', 'guifg': s:cyan }
 let colorgroup['Typedef']         = { 'guibg': 'none', 'guifg': s:yellow }
 
 "" Completion menu
